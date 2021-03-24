@@ -17,7 +17,6 @@
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
-   
 }
 
 .bx-ul {
@@ -387,17 +386,17 @@
 }
 
 .bx-lg {
-    font-size: 5.0 !important
+    font-size: 3.0 !important
 }
 
 .bx-pull-left {
     float: left;
-    margin-right: .1em !important
+    margin-right: .3em !important
 }
 
 .bx-pull-right {
     float: right;
-    margin-left: .1em !important
+    margin-left: .3em !important
 }
 
 .bx-rotate-90 {

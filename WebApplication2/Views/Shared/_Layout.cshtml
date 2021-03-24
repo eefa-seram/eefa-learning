@@ -20,7 +20,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:dimgray" >
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,7 +29,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">EEFA SERAM</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item" style=" width : 85px">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item" style=" width : 85px">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users</a>
+                        </li>
+                        <li class="nav-item" style=" width : 85px">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="navbar-collapse collapse">
 
@@ -37,60 +49,60 @@
         </div>
     </nav>
 
-    <div class="l-navbar" id="navbar">
+    <div class="l-navbar" id="navbar" style="height :100%">
         <nav class="nav">
             <div>
+                <hr />
                 <a href="#" class="nav__logo">
-                    <img src="~/img/6.png" alt=""  width ="90" height="60" class="nav__logo-icon">
-                    <span class="nav__logo-text"></span>
+                    <img src="assets/icons/logo.svg" alt="" class="nav__logo-icon">
+                    <span class="nav__logo-text">Bedimcode</span>
                 </a>
-
+                <hr />
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-chevron-right'></i>
                 </div>
 
                 <ul class="nav__list">
-                    <a href="#" class="nav__link active">
-                        <i class='bx bx-grid-alt nav__icon' ></i>
-                        <span class="nav__text">خانه</span>
+                    <a class="nav__link" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class='bx bx-grid-alt nav__icon'></i>
+                        <span class="nav__text">Home</span>
                     </a>
-                    <a href="~/List/" class="nav__link">
+                    <a class="nav__link" asp-area="" asp-controller="User" asp-action="Index">
                         <i class='bx bx-user nav__icon'></i>
-                        <span class="nav__text">لیست</span>
+                        <span class="nav__text">User</span>
                     </a>
                     <a href="#" class="nav__link">
                         <i class='bx bx-bell nav__icon'></i>
-                        <span class="nav__text"> اطلاعات</span>
+                        <span class="nav__text">Notification</span>
                     </a>
                     <a href="#" class="nav__link">
-                       
+
                         <i class='bx bx-heart nav__icon'></i>
-                        <span class="nav__text"> ادمین</span>
+                        <span class="nav__text">Favorites</span>
                     </a>
                     <a href="#" class="nav__link">
                         <i class='bx bx-bookmark nav__icon'></i>
-                        <span class="nav__text">دسترسی </span>
+                        <span class="nav__text">Saved</span>
                     </a>
-                    
-                        <a href="~/ScaffoldingUser/" class="nav__link">
-                            <i class='bx bx-message-rounded nav__icon'></i>
-                            <span class="nav__text">کاربران </span>
-                        </a>
-</ul>
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-message-rounded nav__icon'></i>
+                        <span class="nav__text">Chat</span>
+                    </a>
+                </ul>
             </div>
-            <a href="#" class="nav__link">
+            <a href="~/List/" class="nav__link">
                 <i class='bx bx-log-out-circle nav__icon'></i>
-                <span class="nav__text">خروج</span>
+                <span class="nav__text">Close</span>
             </a>
         </nav>
     </div>
     <partial name="_CookieConsentPartial" />
-    <hr />
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2021 - EEFA SERAM DIGITAL</p>
+            <p>&copy; 2021 - eefa seram</p>
         </footer>
     </div>
 
@@ -115,7 +127,6 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
     <script src="~/js/main.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

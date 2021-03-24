@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\software2\\Source\\Repos\\eefa-seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {}
+    "D:\\amozesh\\asp\\projhe\\eefa-seram\\learning eefa\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\software2\\Source\\Repos\\eefa-seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {
+    "D:\\amozesh\\asp\\projhe\\eefa-seram\\learning eefa\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\software2\\Source\\Repos\\eefa-seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "D:\\amozesh\\asp\\projhe\\eefa-seram\\learning eefa\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "C:\\Users\\software2\\Source\\Repos\\eefa-seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
-        "packagesPath": "C:\\Users\\software2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\software2\\Source\\Repos\\eefa-seram\\eefa-learning\\WebApplication2\\obj\\",
+        "projectPath": "D:\\amozesh\\asp\\projhe\\eefa-seram\\learning eefa\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
+        "packagesPath": "C:\\Users\\farzad\\.nuget\\packages\\",
+        "outputPath": "D:\\amozesh\\asp\\projhe\\eefa-seram\\learning eefa\\eefa-learning\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\software2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farzad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

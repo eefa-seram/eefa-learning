@@ -2,37 +2,65 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AspNetCoreMvc.Models.Entities;
+using WebApplication2.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication2.Models.Repositories;
 
-namespace AspNetCoreMvc.Controllers
+namespace WebApplication2.Controllers
 {
+
     public class UserController : Controller
     {
+
+        private readonly UserRepository _userRepository;
+
+        public UserController()
+        {
+            _userRepository = new UserRepository();
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return View(_userRepository.GetUserList());
         }
 
-        [HttpGet]
-        public IActionResult Register()
+        public IActionResult Details(long Id)
         {
-            return View();
+            ViewBag.Id = Id;
+            return View(_userRepository.Find(Id));
         }
 
-
-        [HttpPost]
-        public IActionResult Register(Users users)
+        public IActionResult UserDetailViewComponent(long Id)
         {
-            if (ModelState.IsValid)
-            {
-                //ok
-            }
-            else
-            {
-                //not validate
-            }
-            return View();
+            return ViewComponent("UserDetail", new { Id = Id });
         }
     }
+
+
+    //    public IActionResult Index()
+    //    {
+    //        return View();
+    //    }
+
+    //    [HttpGet]
+    //    public IActionResult Register()
+    //    {
+    //        return View();
+    //    }
+
+
+    //    [HttpPost]
+    //    public IActionResult Register(Users users)
+    //    {
+    //        if (ModelState.IsValid)
+    //        {
+    //            //ok
+    //        }
+    //        else
+    //        {
+    //            //not validate
+    //        }
+    //        return View();
+    //    }
+    //}
 }
