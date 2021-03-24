@@ -107,8 +107,8 @@ a {
     position: fixed;
     top: 0;
    right : 0;
-    width: auto ;
-    height: 150px;
+    width: 100px;
+    height: 100vh;
     background-color: var(--first-color);
     padding: 1.25rem .5rem 2rem;
     -webkit-transition: .5s;
@@ -118,7 +118,6 @@ a {
 
 .nav {
     height: 100%;
-    width:auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,6 +198,7 @@ a {
 .nav__icon {
     font-size: 1.5rem;
     margin-right: 1rem;
+    
 }
 
 .nav__text {
