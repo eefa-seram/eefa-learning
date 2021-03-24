@@ -1,0 +1,30 @@
+﻿@model List<SoftwareModel>
+
+
+<div>
+
+
+    @foreach (var s in @Model)
+    {
+        <label>
+
+            @s.Name
+
+        </label>
+        <br />
+        <label>
+
+            @s.Family  
+
+        </label>
+        <br />
+        <label>
+            @s.Namber
+        </label>
+        <br />
+        <hr />
+
+    }
+
+
+</div>

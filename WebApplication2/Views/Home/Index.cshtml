@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- STYLES CSS -->
+
+<link href="~/css/boxicons.min.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<!-- BOX ICONS CSS-->
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<title>Sidebar menu</title>
+
+<body id="body">
+    <br />
+    <h2>EEFA</h2>
+    <p>
+        EEFA SERAM
+    </p>
+    <br /><br /><br />
+    <div class="navbar ">
+        <form>
+            <ul class=" alert-danger active">
+                <li style=" width : auto; height : auto ">
+
+
+                    @await Component.InvokeAsync("Software")
+
+                </li>
+
+
+            </ul>
+        </form>
+
+        <script src="~/js/main.js"></script>
+    </div>
+</body>

@@ -1,0 +1,93 @@
+﻿@model WebApplication2.Models.ListViewModel
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+<h4>ListViewModel</h4>
+<hr />
+
+
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1"></span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2"></span>
+</div>
+
+<label for="basic-url" class="form-label">Your vanity URL</label>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+    <span class="input-group-text"></span>
+    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+    <span class="input-group-text">With textarea</span>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+
+<div class="form-group ">
+
+    <input asp-for="Name" class="form-control " />
+    <label asp-for="Name" class=" control-label "></label>
+    <span asp-validation-for="Name" class=" text-danger "></span>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email " class="control-label"></label>
+                <input asp-for="Email " class="form-control" />
+                <span asp-validation-for="Email " class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message  " class="control-label"></label>
+                <input asp-for="Message  " class="form-control" />
+                <span asp-validation-for="Message  " class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+            <span class="material-icons-outlined">
+                account_box
+            </span>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
