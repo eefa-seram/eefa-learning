@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\projhe\\eefa_seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {}
+    "C:\\Users\\Mustafa\\Source\\Repos\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "G:\\projhe\\eefa_seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {
+    "C:\\Users\\Mustafa\\Source\\Repos\\eefa-learning\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\projhe\\eefa_seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "C:\\Users\\Mustafa\\Source\\Repos\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "G:\\projhe\\eefa_seram\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
-        "packagesPath": "C:\\Users\\software2\\.nuget\\packages\\",
-        "outputPath": "G:\\projhe\\eefa_seram\\eefa-learning\\WebApplication2\\obj\\",
+        "projectPath": "C:\\Users\\Mustafa\\Source\\Repos\\eefa-learning\\WebApplication2\\WebApplication2.csproj",
+        "packagesPath": "C:\\Users\\Mustafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mustafa\\Source\\Repos\\eefa-learning\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\software2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Mustafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
